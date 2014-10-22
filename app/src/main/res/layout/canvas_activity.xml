@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <com.imranyousuf.fsw.drawings.DrawingSurface
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/drawingSurface"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+         <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Red"
+                android:onClick="onClick"
+                android:id="@+id/colorRedBtn"
+
+        />
+        <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Green"
+                android:onClick="onClick"
+                android:id="@+id/colorBlueBtn"
+        />
+        <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Blue"
+                android:onClick="onClick"
+                android:id="@+id/colorGreenBtn"
+        />
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="White"
+            android:onClick="onClick"
+            android:id="@+id/colorWhiteBtn"
+            />
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="EC Brush"
+            android:onClick="onClick"
+            android:id="@+id/circleBtn"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center|bottom"
+    >
+
+        <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Undo"
+                android:onClick="onClick"
+                android:id="@+id/undoBtn"
+        />
+        <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Redo"
+                android:onClick="onClick"
+                android:id="@+id/redoBtn"
+        />
+        <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Save"
+                android:onClick="onClick"
+                android:id="@+id/saveBtn"
+        />
+        <Button
+            android:id="@+id/btnPick"
+            android:text="Pick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:text="Upload"
+            android:onClick="shareOnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+</RelativeLayout>
